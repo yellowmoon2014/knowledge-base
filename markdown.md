@@ -66,6 +66,7 @@
  }
  ```
 
+
 # 分割线
 要创建分隔线，请在单独一行上使用三个或多个星号 (***)、破折号 (---) 或下划线 (___) ，并且不能包含其他内容
 ___
@@ -119,3 +120,18 @@ See the section on [`code`](#code).
 # 删除线
 ~~删除~~
 
+# Mermaid
+~~~mermaid
+graph LR
+A[Core Container] --> B[Data Access]
+A --> C[Web]
+A --> D[AOP]
+A --> E[Test]
+B --> F[JDBC] 
+B --> G[ORM]
+C --> H[MVC]
+C --> I[WebSocket]
+D --> J[Aspects]
+E --> K[Mock]
+E --> L[TestContext]
+~~~
